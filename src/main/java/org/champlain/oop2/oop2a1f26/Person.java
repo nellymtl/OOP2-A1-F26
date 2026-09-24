@@ -28,4 +28,19 @@ public class Person {
     public boolean isPurchasedParkingPass() {
         return ParkingPass;
     }
+    public String getName() {
+        return aName;
+    }
+    public String getEmailAddress() {
+        return aEmailAddress;
+    }
+    public LocalDate getDOB() {
+        return aDOB;
+    }
+    @Override
+    public String toString() {
+        return aName + " " + aDOB + " " + aEmailAddress;
+
+
+    }
 }
