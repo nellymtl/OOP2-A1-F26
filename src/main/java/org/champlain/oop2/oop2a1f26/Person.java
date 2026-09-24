@@ -25,22 +25,36 @@ public class Person {
         this.aEmailAddress = pEmailAddress.trim();
         this.ParkingPass = false;
     }
-    public boolean isPurchasedParkingPass() {
-        return ParkingPass;
-    }
+
     public String getName() {
         return aName;
     }
+
     public String getEmailAddress() {
         return aEmailAddress;
     }
+
     public LocalDate getDOB() {
         return aDOB;
     }
+
     @Override
     public String toString() {
         return aName + " " + aDOB + " " + aEmailAddress;
 
 
+    }
+
+
+    public boolean purchaseParkingPass() {
+        if (!ParkingPass) {
+            ParkingPass = true;
+
+        }
+        return false;
+    }
+
+    public boolean isPurchasedParkingPass() {
+        return ParkingPass;
     }
 }
